@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Contacto= () =>{
+const Contacto= (agregarPersona) =>{
     const [nombre, setNombre] = useState('');
     const [apellido, setApellido] = useState('');
     const [email, setEmail] = useState('');
@@ -21,7 +21,7 @@ const Contacto= () =>{
             id: nombre, apellido, email, edad
         };
 
-        agregarCita(nuevaPersona);
+        agregarPersona(nuevaPersona);
     };
 
     return (
