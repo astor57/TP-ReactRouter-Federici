@@ -6,6 +6,12 @@ import Contactos from './components/Contacto';
 import Estadisticas from './components/Estadisticas';
 
 function App() {
+  const [people, setPeople] = useState([]);
+
+  const agregarPersona = (persona) => {
+    setPeople([...people, persona]);
+  };
+
   return (
     <>
       <BrowserRouter>
@@ -13,10 +19,9 @@ function App() {
         <Route path="/" element={<Layout />}></Route>
         <Route path="/Contacto" element={<Contactos />}></Route>
         <Route path="/Estadisticas" element={<Estadisticas />}></Route>
-
-
       </Routes>
       </BrowserRouter>
+      <Contactos agregarPersona={agregarPersona}/>
     </>
   )
 }

@@ -26,7 +26,7 @@
   { "id": 25, "nombre": "Clara", "apellido": "Ramos", "edad": 30, "email": "clara25@gmail.com" },
   { "id": 26, "nombre": "Samuel", "apellido": "Méndez", "edad": 42, "email": "samuel26@gmail.com" },
   { "id": 27, "nombre": "Irene", "apellido": "Herrera", "edad": 18, "email": "irene27@gmail.com" },
-  { "id": 28, "nombre": "Pablo", "apellido": "Jiménez", "edad": 34, "email": "pablo28@gmail.com" },
+  { "id": 28, "nombre": "Elver", "apellido": "Galarga", "edad": 34, "email": "pablo28@gmail.com" },
   { "id": 29, "nombre": "Alicia", "apellido": "Soto", "edad": 37, "email": "alicia29@gmail.com" },
   { "id": 30, "nombre": "Gonzalo", "apellido": "Suárez", "edad": 43, "email": "gonzalo30@gmail.com" },
   { "id": 31, "nombre": "Teresa", "apellido": "Medina", "edad": 28, "email": "teresa31@gmail.com" },
