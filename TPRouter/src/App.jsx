@@ -1,30 +1,25 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import './App.css'
-import Layout from './components/Layout';
-import Contactos from './components/Contacto';
-import Estadisticas from './components/Estadisticas';
-import DetallePersona from "./components/DetallesPersona";
-import NotFound from './components/404';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
 import Home from "./components/Home";
-
-
+import DetallesPersona from "./components/DetallesPersona";
+import Contacto from "./components/Contacto";
+import Estadisticas from "./components/Estadisticas";
+import NotFound from "./components/404";
 
 function App() {
-
   return (
-    <>
-      <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="/" element={<Layout />}></Route>
-        <Route path="/Contacto" element={<Contactos />}></Route>
-        <Route path="/Estadisticas" element={<Estadisticas />}></Route>
-        <Route path="people/:id" element={<DetallePersona />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="persona/:id" element={<DetallesPersona />} />
+          <Route path="contacto" element={<Contacto />} />
+          <Route path="estadisticas" element={<Estadisticas />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
       </Routes>
-      </BrowserRouter>
-    </>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

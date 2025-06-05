@@ -9,7 +9,11 @@ const Home = () => {
     fetch("/people.json")
       .then((response) => response.json())
       .then((data) => {
-        setPersonas(data);
+        setPersonas(data);  
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error cargando datos:", error);
         setLoading(false);
       });
   }, []);

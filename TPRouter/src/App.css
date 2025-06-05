@@ -59,7 +59,6 @@
   color: #3498db;
 }
 
-/* Home */
 .home-container h1 {
   margin-bottom: 2rem;
   color: #2c3e50;
@@ -131,7 +130,6 @@
   margin-top: 2rem;
 }
 
-/* Estadísticas */
 .estadisticas-container h1 {
   color: #2c3e50;
   margin-bottom: 2rem;
@@ -189,7 +187,6 @@
   border-radius: 4px;
 }
 
-/* Contacto */
 .contacto-container h1 {
   color: #2c3e50;
   margin-bottom: 2rem;
@@ -256,7 +253,6 @@
   margin: 0 auto;
 }
 
-/* 404 */
 .not-found-container {
   text-align: center;
   padding: 4rem 2rem;
