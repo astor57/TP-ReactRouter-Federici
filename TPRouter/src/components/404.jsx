@@ -1,9 +1,15 @@
+import { Link } from "react-router-dom";
+
 const PaginaError= () =>{
-    return(
-        <>
-        <h1>Error 404</h1>
-        <h3>No encontramos lo que buscás 😕</h3>
-        </>
-    )
+    return (
+        <div className="not-found-container">
+          <h1>404 - Página no encontrada</h1>
+          <p>No encontramos lo que buscás 😕</p>
+          <Link to="/" className="home-link">
+            Volver al inicio
+          </Link>
+        </div>
+      );
+    
 }
 export default PaginaError;
