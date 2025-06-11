@@ -29,7 +29,6 @@ const PersonaDetalle = () => {
         <h2>{persona.nombre} {persona.apellido}</h2>
         <p><strong>Email:</strong> {persona.email}</p>
         <p><strong>Edad:</strong> {persona.edad} - {persona.edad >= 18 ? "Mayor" : "Menor"} de edad</p>
-        <p><strong>Dirección:</strong> {persona.direccion}</p>
       </div>
     );
   };

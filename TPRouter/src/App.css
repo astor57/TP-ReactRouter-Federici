@@ -12,15 +12,11 @@
 }
 
 .main-content {
-  flex: 1;
   padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
 }
 
 .navbar {
-  background-color: #2c3e50;
+  background-color: #ffffff;
   color: white;
   padding: 1rem;
 }
@@ -29,63 +25,40 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .navbar-logo {
-  color: white;
+  color: rgb(86, 152, 250);
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.navbar-menu {
-  display: flex;
-  list-style: none;
-}
-
-.navbar-menu li {
-  margin-left: 1.5rem;
-}
-
-.navbar-menu a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.navbar-menu a:hover {
-  color: #3498db;
-}
 
 .home-container h1 {
+  display: flex;
+  justify-content: center;
   margin-bottom: 2rem;
-  color: #2c3e50;
+  color: #ffffff;
 }
 
 .personas-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  gap: 2rem;
 }
 
 .persona-card {
-  background-color: white;
+  background-color: rgb(68, 97, 150);
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.persona-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
 .persona-card h3 {
   margin-bottom: 0.5rem;
-  color: #2c3e50;
+  color: #ffffff;
 }
 
 .btn-ver-mas {
@@ -100,12 +73,11 @@
 }
 
 .btn-ver-mas:hover {
-  background-color: #2980b9;
+  background-color: #8cb0c9;
 }
 
-/* Persona Detalle */
 .persona-detalle {
-  background-color: white;
+  background-color: rgb(68, 97, 150);
   border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -114,13 +86,14 @@
 }
 
 .persona-detalle h2 {
-  color: #2c3e50;
+  color: #ffffff;
   margin-bottom: 1.5rem;
 }
 
 .persona-detalle p {
   margin-bottom: 0.8rem;
   font-size: 1.1rem;
+  color: #ffffff;
 }
 
 .error-message {
@@ -131,7 +104,7 @@
 }
 
 .estadisticas-container h1 {
-  color: #2c3e50;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 
@@ -161,34 +134,8 @@
   color: #3498db;
 }
 
-.age-extremes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  background-color: white;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.age-extremes h3 {
-  color: #2c3e50;
-  margin-bottom: 1rem;
-}
-
-.age-extremes ul {
-  list-style: none;
-}
-
-.age-extremes li {
-  margin-bottom: 0.5rem;
-  padding: 0.5rem;
-  background-color: #f8f9fa;
-  border-radius: 4px;
-}
-
 .contacto-container h1 {
-  color: #2c3e50;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 
@@ -243,7 +190,7 @@
 }
 
 .success-message {
-  background-color: #2ecc71;
+  background-color: #0a6d33;
   color: white;
   padding: 1.5rem;
   border-radius: 8px;

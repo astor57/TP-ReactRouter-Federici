@@ -5,6 +5,8 @@ import DetallesPersona from "./components/DetallesPersona";
 import Contacto from "./components/Contacto";
 import Estadisticas from "./components/Estadisticas";
 import NotFound from "./components/404";
+import './App.css';
+
 
 function App() {
   return (

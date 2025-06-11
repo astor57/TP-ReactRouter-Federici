@@ -22,17 +22,17 @@ const Contacto = () => {
     const newErrors = {};
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!formData.nombre.trim()) newErrors.nombre = "Nombre es requerido";
-    if (!formData.apellido.trim()) newErrors.apellido = "Apellido es requerido";
+    if (!formData.nombre.trim()) newErrors.nombre = "Ingrese el nombre";
+    if (!formData.apellido.trim()) newErrors.apellido = "Ingrese el nombre";
     if (!formData.email.trim()) {
-      newErrors.email = "Email es requerido";
+      newErrors.email = "Ingrese el mail";
     } else if (!emailRegex.test(formData.email)) {
       newErrors.email = "Email no válido";
     }
     if (!formData.edad) {
-      newErrors.edad = "Edad es requerida";
+      newErrors.edad = "Ingrese la edad";
     } else if (isNaN(formData.edad) || formData.edad <= 0) {
-      newErrors.edad = "Edad debe ser un número positivo";
+      newErrors.edad = "Edad no válida";
     }
 
     setErrors(newErrors);
@@ -42,7 +42,6 @@ const Contacto = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      // Aquí normalmente enviarías los datos a un servidor
       console.log("Formulario enviado:", formData);
       setIsSubmitted(true);
       setFormData({
@@ -59,7 +58,7 @@ const Contacto = () => {
       <h1>Formulario de Contacto</h1>
       {isSubmitted ? (
         <div className="success-message">
-          ¡Formulario enviado con éxito!
+          Formulario enviado
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="contacto-form">
